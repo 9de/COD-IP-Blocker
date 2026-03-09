@@ -1,24 +1,21 @@
-# COD IP Blocker — Windows Firewall Script
+# Call of Duty Middle East Server IP Ranges
 
-This repository contains a **Windows CMD script** that allows you to block specific IP ranges for a given game executable (e.g., *Call of Duty HQ*).  
-It uses **Windows Defender Firewall** to block outbound connections from the game binary to selected IP ranges.
+This repository lists **IP ranges used by Activision to host Middle East servers** for the Call of Duty series.
+It mainly covers titles from **Modern Warfare (2019)** through newer releases (up to **BO7 era infrastructure**).
+These ranges were collected so users can **block connections** to Middle East servers for purposes.
+
+
+> ⚠️ **Disclaimer**
+> These IP ranges are based on public ASN data and network observations.
+> They may change at any time as infrastructure is updated.
 
 ---
 
 ## 🌐 IP Ranges to Block
 
-| IP Range        | Description / Owner                    | ASN        | Country         |
-|-----------------|----------------------------------------|------------|-----------------|
-| `94.97.0.0/16`  | Saudi Telecom Company JSC              | AS25019    | Saudi Arabia 🇸🇦 | :contentReference[oaicite:0]{index=0}
-| `15.185.0.0/16` | AWS (Amazon Data Services Bahrain)     | AS16509    | Bahrain 🇧🇭     | :contentReference[oaicite:1]{index=1}
-| `15.184.0.0/16` | AWS (Amazon Data Services Bahrain)     | AS16509    | Bahrain 🇧🇭     | :contentReference[oaicite:2]{index=2}
-| `16.24.0.0/16` | AWS (Amazon Data Services Bahrain)     | AS16509    | Bahrain 🇧🇭     | :contentReference[oaicite:2]{index=3}
-
-
-> **Note:** These IP ranges may host services or servers used by the game or its backend services. Blocking them may affect connectivity in unexpected ways.
-
----
-
-## 🛠️ Windows CMD Script
-
-This script will ask for the **path to the COD game executable** and create firewall rules to block the above IP ranges.
+| IP Range        | Provider                           | ASN     | Country           |
+| --------------- | ---------------------------------- | ------- | ----------------- |
+| `94.97.0.0/16`  | Saudi Telecom Company JSC          | AS25019 | 🇸🇦 Saudi Arabia |
+| `15.185.0.0/16` | AWS (Amazon Data Services Bahrain) | AS16509 | 🇧🇭 Bahrain      |
+| `15.184.0.0/16` | AWS (Amazon Data Services Bahrain) | AS16509 | 🇧🇭 Bahrain      |
+| `16.24.0.0/16`  | AWS (Amazon Data Services Bahrain) | AS16509 | 🇧🇭 Bahrain      |
